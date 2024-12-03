@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Listings</title>
+  <style>
+    body {
+      /* font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa; */
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; 
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+    .product-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 250px;
+      padding: 16px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .product-card img {
+      max-width: 100%;
+      height: 250px;
+      border-radius: 4px;
+    }
+    .product-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 10px 0;
+      color: #333;
+      min-height: 40px; /* Ensure consistent height for all titles */
+    }
+    .product-rating {
+      color: #f5a623;
+      font-size: 14px;
+      min-height: 20px; /* Ensure consistent height for ratings */
+    }
+    .product-price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #e63946;
+      margin: 10px 0;
+      min-height: 20px; /* Ensure consistent height for prices */
+    }
+    .product-old-price {
+      text-decoration: line-through;
+      font-size: 14px;
+      color: #888;
+    }
+    .product-delivery {
+      font-size: 14px;
+      color: #555;
+      margin: 5px 0;
+      min-height: 40px; /* Ensure consistent height for delivery info */
+    }
+    .add-to-cart {
+      display: inline-block;
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      padding: 10px 16px;
+      font-size: 14px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+    .add-to-cart:hover {
+      background-color: #0056b3;
+    }
+    .logo-container img {
+  transition: transform 0.3s ease-in-out;
+}
+.logo-container img:hover {
+  transform: scale(1.1);
+}
+input[type="text"] {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 8px 15px;
+  font-size: 14px;
+  outline: none;
+  width: 200px;
+  transition: box-shadow 0.3s ease;
+}
+input[type="text"]:focus {
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+  border-color: #007bff;
+}
+.product-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.product-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+    .footer {
+        background-color: #0056b3; /* Dark background color */
+      color: white; /* Light gray text color */
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 14px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      Margin-top:220px;
+    }
+
+    .footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-bottom {
+      margin-top: 10px;
+      font-size: 18px;
+      color: white;
+    }
+    @media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .product-card {
+    width: 90%; /* 调整宽度适应小屏幕 */
+  }
+}
+
+  </style>
+</head>
+<body>
+    
+    <div class="logo-container" >
+        <img src="./logo.jpg" alt="Logo" style="width:100px;margin-left:100px">
+        <textarea style="margin-left:200px">search</textarea>
+      </div>
+  <div class="container" style="flex: 1;">
+    <!-- Product 1 -->
+    <div class="product-card">
+      <img src="./p1.jpg" alt="Product 1">
+      <div class="product-title">GripPro Basics Universal Smartphone Holder for Car Air Vent</div>
+      <div class="product-rating">⭐⭐⭐⭐⭐ (15,562)</div>
+      <div class="product-price">$13.29 <span class="product-old-price">$18.00</span></div>
+      <div class="product-delivery">Free delivery on orders over $35 shipped by GripPro.</div>
+      <a href="#" class="add-to-cart">Add to Cart</a>
+    </div>
+    <!-- Product 2 -->
+    <div class="product-card">
+      <img src="./2.jpg" alt="Product 2">
+      <div class="product-title">Lamical Car Vent Phone Mount - 2024 GripPro Clamp</div>
+      <div class="product-rating">⭐⭐⭐⭐☆ (8,638)</div>
+      <div class="product-price">$19.99 <span class="product-old-price">$24.99</span></div>
+      <div class="product-delivery">Free delivery Fri, Dec 6 on $35 of items shipped by GripPro.</div>
+      <a href="#" class="add-to-cart">Add to Cart</a>
+    </div>
+    <!-- Product 3 -->
+    <div class="product-card">
+      <img src="./3.jpg" alt="Product 3">
+      <div class="product-title">Phone Mount for Car Vent 2024 GripPro Air Vent</div>
+      <div class="product-rating">⭐⭐⭐⭐☆ (7,120)</div>
+      <div class="product-price">$16.64 <span class="product-old-price">$23.99</span></div>
+      <div class="product-delivery">Free delivery Fri, Dec 6 on $35 of items shipped by GripPro.</div>
+      <a href="#" class="add-to-cart">Add to Cart</a>
+    </div>
+    <div class="product-card">
+        <img src="./4.jpg" alt="Product 1">
+        <div class="product-title">GripPro Basics Universal Smartphone Holder for Car Air Vent 2024</div>
+        <div class="product-rating">⭐⭐⭐⭐⭐ (12,562)</div>
+        <div class="product-price">$13.29 <span class="product-old-price">$18.00</span></div>
+        <div class="product-delivery">Free delivery on orders over $35 shipped by GripPro.</div>
+        <a href="#" class="add-to-cart">Add to Cart</a>
+      </div>
+      <!-- Product 2 -->
+      <div class="product-card">
+        <img src="./5.jpg" alt="Product 2">
+        <div class="product-title">Lamical Car Vent Phone Mount - 2023 GripPro Clamp</div>
+        <div class="product-rating">⭐⭐⭐⭐☆ (1,638)</div>
+        <div class="product-price">$19.99 <span class="product-old-price">$24.99</span></div>
+        <div class="product-delivery">Free delivery Fri, Dec 6 on $35 of items shipped by GripPro.</div>
+        <a href="#" class="add-to-cart">Add to Cart</a>
+      </div>
+      <!-- Product 3 -->
+      <div class="product-card">
+        <img src="./6.jpg" alt="Product 3">
+        <div class="product-title">AINOPE Phone Mount for Car Vent 2024 GripPro Air Vent</div>
+        <div class="product-rating">⭐⭐⭐⭐☆ (2,120)</div>
+        <div class="product-price">$16.64 <span class="product-old-price">$23.99</span></div>
+        <div class="product-delivery">Free delivery Fri, Dec 6 on $35 of items shipped by GripPro.</div>
+        <a href="#" class="add-to-cart">Add to Cart</a>
+      </div>
+      
+  </div>
+  <div class="footer">
+    <div>
+      <a href="#">Conditions of Use</a>
+      <a href="#">Privacy Notice</a>
+      <a href="#">Interest-Based Ads</a>
+    </div>
+    <div>© 2024-, GripPro.ca, Inc. or its affiliates</div>
+    <div class="footer-bottom">
+      Lynn & Maggie 
+    </div>
+  </div>
+</body>
+</html>
